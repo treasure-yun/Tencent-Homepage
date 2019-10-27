@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>腾讯-随缘</title>
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/color.css">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            var cdnUrl = '';  //资源url
+            //视频列表数据，三个视频
+            var videoList = [
+                {
+                    resid:'../img/bannerbg1.mp4',
+                },
+                {
+                    resid:'../img/bannerbg2.mp4',
+                },
+            ];
+            var leg = videoList.length;
+            console.log(leg)
+            $(document).ready(function(){
+                //加载视频列表
+                var str='';
+                for(var i=0;i<leg;i++){
+                    loadvideo(videoList[i],i);
+                }
+                var _width = $('.video_shows').outerWidth();
+                console.log(_width)
+                //初始化播放第一条
+                var video_show = $('.video_shows');
+                var video = $('.video_shows video');
+                video[0].load();
+                video[0].play();
+                var num =0;  //当前播放视频的下标
+                playlist(video);
+                function playlist(video){
+                    //监控当前视频是否播放完毕
+                    video[num].onended = function(){
+                        console.log("第"+(num+1)+"条视频播放完毕")
+                        num++;
+                        if(num<video.length){
+                            var _left=-_width*num+'px';
+                            $('.video_ls').animate({'left':_left},'1500')
+                        }else{
+                            num=0;//
+                            $(".video_ls").css('left','0');
+                            $('.video_ls').animate({'left':_left},'1500')
+                        }
+                        video[num].load();
+                        video[num].play();
+                        return playlist(video);
+                    }
+        
+                }
+        
+            })
+            //加载视频播放界面
+            function loadvideo(videodta,i){
+                str = '';
+                str += '<div class="video_shows">';
+                str += '<video id="myvideo'+(i+1)+'" class="video-js vjs-big-play-centered"  poster="'+videodta.resid+'?vframe/jpg/offset/0" controls  preload="auto">';
+                str += '<source src="'+videodta.resid+'" type="video/mp4">';
+                str += '</video>';
+                str += '</div>';
+                $(".video_ls").append(str);
+            }
+        </script> -->
+    </head>
+    <body>
+        <header>
+            <!-- 导航栏 -->
+            <div class="nav">
+                <div class="nav-head">
+                    <!-- logo -->
+                    <a href="home.html">
+                        <h1 class="logo"></h1>
+                    </a>
+                    <!-- 菜单栏 -->
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="company.html">
+                                <!-- t-line:横线  v-line:竖线 -->
+                                公司信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                企业文化
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                业务体系
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                投资者关系
+                            </a>
+                        </li>
+                        <li class="Ch">
+                            <a href="#" >
+                               简
+                            </a>
+                            <a href="#">
+                               繁
+                            </a>
+                            <a href="#">
+                               EN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <article>
+             <!-- 视频 -->
+             <section class="banner-mp4">
+                <video src="../img/bannerbg1.mp4" loop autoplay preload muted  height="600px">
+                </video>
+                <img src="../img/banner_txt3.png">
+                <!-- <video src="../img/bannerbg2.mp4" loop autoplay preload muted class="mp4_2">
+                </video> -->
+            </section>
+             <!-- ----介绍----  -->
+            <section class="about-company">
+                <div class="title">
+                    <img src="../img/about_txt.png">
+                </div>
+               
+                <p>腾讯，1998年11月诞生于中国深圳，是一家以互联网为基础的科技与文化公司。</p>
+                <p>我们的使命是 “通过互联网服务提升人类生活品质”。</p>
+                <p>腾讯秉承着 “一切以用户价值为依归” 的经营理念，致力于为亿万网民提供优质的互联网综合服务。</p>
+                <a href="#">了解更多&nbsp;&nbsp;<img src="../img/icon_arrow.png"></a>
+            </section>
+             <!-- ----介绍----  -->
+
+             <!-- ----更多---- -->
+             <section class="more-company">
+                 <!-- =====left====== -->
+                <div class="left color1">
+                    <!-- ****图片**** -->
+                    <a href="#">
+                        <div class="bg">
+                            <img src="../img/news_tit_1.png"/>
+                            <p>构筑智慧未来</p>
+                            <div class="more">
+                                <!-- <p>了解更多<img src="../img/icon_arrow_2.png"></p> -->
+                                <p>了解更多</p>
+                                <img src="../img/icon_arrow_2.png">
+                            </div>
+                        </div>                        
+                    </a>
+                    <!-- ****图片**** -->
+
+                    <!-- ****字体**** -->
+                    <div class="text_up">
+                        <a href="#" >
+                            <p>
+                                首届中国智慧交通大会在京召开，腾讯发布4款智慧出行新品
+                            </p>
+                        </a>
+                        <span>
+                                2018/10/23
+                        </span>
+                    </div>
+                    <hr>                        
+                    <div class="text_down">
+                        <a href="#">
+                            <p>
+                                马化腾：做好数字助手，腾讯积极共建智能网联汽车生态
+                            </p>
+                        </a>
+                        <span>
+                                2018/10/18
+                        </span>
+                    </div>
+                    <!-- ****字体**** -->
+
+
+                </div>
+
+                <!-- =====center====== -->
+                <div class="center color2">
+                    <!-- ****图片**** -->
+                    <a href="#">
+                        <div class="bg">
+                            <img src="../img/news_tit_2.png"/>
+                            <p>丰富精神生活</p>
+                            <div class="more">
+                                <!-- <p>了解更多<img src="../img/icon_arrow_2.png"></p> -->
+                                <p>了解更多</p>
+                                <img src="../img/icon_arrow_2.png">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ****图片**** -->
+
+                    <!-- ****字体**** -->
+                    <div class="text_up">
+                        <a href="#" >
+                            <p>
+                                腾讯与法国国家博物馆联合会战略合作  “国宝全球数字博物馆”... 
+                            </p>
+                        </a>
+                        <span>
+                                2019/01/31
+                        </span>
+                    </div>
+                    <hr>                        
+                    <div class="text_down">
+                        <a href="#">
+                            <p>
+                                故宫×腾讯十大领域成果落地 三年打造数字文博新标杆
+                            </p>
+                        </a>
+                        <span>
+                                2018/11/09
+                        </span>
+                    </div>
+                    <!-- ****字体**** -->
+
+
+                </div>
+
+                <!-- =====right====== -->
+                <div class="right color3">
+                    <!-- ****图片**** -->
+                    <a href="#">
+                        <div class="bg">
+                            <img src="../img/news_tit_3.png"/>
+                            <p>履行使命担当</p>
+                            <div class="more">
+                                <!-- <p>了解更多<img src="../img/icon_arrow_2.png"></p> -->
+                                <p>了解更多</p>
+                                <img src="../img/icon_arrow_2.png">
+                            </div>
+                        </div> 
+                    </a>
+                    <!-- ****图片**** -->
+
+                    <!-- ****字体**** -->
+                    <div class="text_up">
+                        <a href="#" >
+                            <p>
+                                腾讯举办首届青少年科学小会 联合Science发布科学看点榜单
+                            </p>
+                        </a>
+                        <span>
+                            2019/01/22
+                        </span>
+                    </div>
+                    <hr>                        
+                    <div class="text_down">
+                        <a href="#">
+                            <p>
+                                联合国教科文组织颁发数字技术增强残疾人权能奖 腾讯为全球... 
+                            </p>
+                        </a>
+                        <span>
+                                2018/12/04
+                        </span>
+                    </div>
+
+                    <!-- ****字体**** -->
+
+
+                </div>               
+            </section>
+            <!-- ----更多---- -->
+
+             <!-- -----产品服务------ -->
+             <section class="service-company ">
+                 <a href="#">
+                    <div class="bg">
+                        <img src="../img/moreproj_tit.png">
+                        <p>扎根消费互联网&nbsp;拥抱产业互联网</p>
+                        <span>
+                            了解更多产品服务
+                            <img src="../img/icon_arrow_2.png">
+                        </span>
+                    </div>
+                </a>
+            </section>
+            <!-- -----产品服务------ -->
+        </article>
+         <!-- 尾部 -->
+         <footer class="footer">
+            <div class="text">
+                <div>
+                    <p>关注我们</p>
+                    <br>
+                    <li><a href="#">微信</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                </div>
+                <div >
+                    <p>加入我们</p>
+                    <br>
+                    <li><a href="#">社会招聘</a></li>
+                    <li><a href="#">校园招聘</a></li>
+                    <li><a href="#">国际招聘</a></li>
+
+                </div>
+                <div >
+                    <p>联系我们</p>
+                    <br>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">合作洽谈</a></li>
+                    <li><a href="#">服务采购</a></li>
+
+                </div>
+                <div >
+                    <p>法律信息</p>
+                    <br>
+                    <li><a href="#">服务协议</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">知识产权</a></li>
+
+                </div>
+            </div>
+            <div class="foot">
+                <div style="float:left">
+                    <ul>
+                        <li><a href="#">法律声明</a></li>
+                        <li><a href="#">监督举报</a></li>
+                        <li><a href="#">网站地图</a></li>
+                        <li><a href="#">粤网文【2017】6138-1456号</a></li>
+                    </ul>
+                </div>
+
+                <div style="float: right;">
+                    <p>Copyright © 1998 - 2019 Tencent. All Rights Reserved.&nbsp;<span>腾讯公司&nbsp;版权所有</span></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

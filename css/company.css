@@ -1,0 +1,14 @@
+
+.main{
+    position: relative;
+    margin-top: 84px;
+}
+
+.left_list{
+    position: absolute;
+    width: 198px;
+    height: 180px;
+}
+section{
+    height: 200px;
+}

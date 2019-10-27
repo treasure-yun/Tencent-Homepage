@@ -1,0 +1,323 @@
+/* 通用样式 */
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 导航栏样式 */
+.nav{
+    height: 84px;
+    width: 100%;
+    background-color:#0052d9;
+    /* 固定定位 */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nav-head{
+    height: 84px;
+    width: 1200px;
+    margin: 0 auto;
+    /* 绝对定位 */
+    position: relative;
+}
+.logo{
+
+    width: 203px;
+    height: 27px;
+    background-image: url(../img/logo.png);
+    /* 相对定位 */
+    position: absolute;
+    top: 28px;
+    left: 15px;
+}
+.menu{
+    float: right;
+}
+.menu li{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 84px;
+    font-weight: 500px;
+    margin: 0 10px;
+}
+.menu .menu_link li a{
+    display: block;
+    border-right: #ffffff;
+}
+
+.menu li a{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    
+}
+.menu .Ch a{
+    font-size: 14px;
+    color: rgb(190, 190, 190);
+}
+.menu .Ch a:first-child{
+    color: rgb(255, 255, 255);
+}
+.menu .Ch a:hover{
+    color: rgb(255, 255, 255);
+}
+/* ************主题样式************* */
+/*++++++++ 视频 +++++++*/
+.banner-mp4{
+    position: relative;
+    z-index: -1;
+    /* width: 800px;  */
+    height: 600px;
+    /* display: flex; */
+    margin-left: -50%;
+}
+.banner-mp4 img{
+    position: absolute;
+    z-index: 0;
+    top: 45%;
+    left: 50%;
+}
+/*++++++++ 视频 ++++++*/
+/* ===============介绍============== */
+.about-company{
+    height: 381px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-company .title{
+    width: 686px;
+    height: 43px;
+    block-size: cover no-repeat;
+    margin: 30px auto ;
+}
+
+.about-company p{
+    font-size: 1em;
+    text-align: center;
+    line-height: 2em;
+}
+.about-company a{
+    height: 18px;
+    text-align: center;
+    color:#0052d9;
+    font-weight: 500px;
+    line-height: 18px;
+}
+/* ===============介绍============== */
+
+
+/* -----------更多---------- */
+/* ***图片样式*** */
+.more-company{
+    height: 563px;
+    display: flex;
+   
+    justify-content:space-around; 
+}
+.more-company div{
+    display: inline-block;
+    width: 364px;
+}
+.more-company .left,
+.more-company .center,
+.more-company .right{
+    background: #f3f5f6;
+}
+/* 左边 */
+.more-company .left .bg{
+    height: 230px;
+    background-image: url("../img/news_bg_1.png");
+    background: cover no-repeat;
+}
+/* 中间 */
+.more-company .center .bg{
+    height: 230px;
+    background-image: url("../img/news_bg_2.png");
+    background: cover no-repeat;
+}
+
+/* 右边 */
+.more-company .right .bg{
+    height: 230px;
+    background-image: url("../img/news_bg_3.png");
+    background: cover no-repeat;
+}
+/* 相同样式 */
+.more-company .bg img
+{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.more-company .bg p
+{
+    margin-left: 10%;
+    color: white;
+    font-size: 22px;
+}
+/* 了解更多 */
+.more-company .more
+{
+    margin-top: 25px;
+}
+.more-company .more p
+{
+    display: inline;
+
+    margin-left: 10%;
+    font-size: 16px;
+}
+.more-company .more img{
+    margin-left: 10px;
+}
+/* ***字体样式*** */
+.more-company .text_up{
+    margin: 40px auto;
+    display: block;
+    width: 284px;
+    height: 72px;
+    
+}
+.more-company .text_up a{
+    font-size: 20px;
+    color: #2a2e2e;
+}
+.more-company .text_up span{
+    color:#919797;
+    display: block;
+    margin-top: 10px;
+}
+.more-company hr{
+    margin: auto 35px;
+    
+}
+.more-company .text_down{
+    margin: 30px auto;
+    display: block;
+    width: 284px;
+    height: 72px;
+    
+}
+.more-company .text_down a{
+    font-size: 20px;
+    color: #2a2e2e;
+}
+.more-company .text_down span{
+    color:#919797;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* ***字体样式*** */
+/* -----------更多---------- */
+
+
+
+/* ==============产品服务============= */
+.service-company{
+    height: 380px;
+    margin: 72px 0;
+}
+.service-company .bg{
+    width: 1185px;
+    margin: 0 auto;
+    height: 100%;
+    background-image: url("../img/more_proj.jpg");
+    background-size: cover no-repeat;
+}
+.service-company .bg img{
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+.service-company a{
+    color: white;
+    font-size: 20px;
+}
+.service-company .bg p{
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.service-company .bg span{
+    display: block;
+    margin-left: 10%;
+}
+.service-company .bg span img{
+    margin-left: 0px;   
+}
+/* ==============产品服务============= */
+
+
+/* ************主题样式************* */
+
+/* 尾部样式 */
+.footer{
+    height: 275px;
+    background: url(../img/footer_logo.png) right 100px no-repeat;
+    background-color: #ecf0f1;
+    /* display: flex; */
+}
+.footer .text {
+    display: flex;
+}
+.footer .text div{
+
+    width: 168px;
+    height: 138px;
+    margin-top: 30px;
+    
+} 
+.footer div:first-child{
+   
+    margin-left: 20px;
+}
+.footer p{
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+.footer li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    
+}
+.footer li a{
+    color: #747b81;
+}
+.footer li a:hover{
+    color: #343435;
+}
+
+.footer .foot{
+    margin-top: 3%;
+    height: 14px;
+}
+.footer .foot li{
+    display: inline;
+    margin-left: 20px;
+    line-height: 14px;
+    font-size: 14px;
+    
+}
+.footer .foot p{
+    line-height: 14px;
+    font-size: 14px;
+    color: #747b81;
+}
+.footer .foot p span{
+    /* line-height: 14px; */
+    font-size: 16px;
+    color: #747b81;
+}
+
+
+/* 尾部样式 */
